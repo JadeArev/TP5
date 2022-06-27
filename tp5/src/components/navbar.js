@@ -3,7 +3,7 @@
    import Logo from '../images/Logo.png';
 
 
-   export default function Navbar(){
+   function Navbar(){
 
 
         return (
@@ -32,9 +32,9 @@
             </div>
           </nav>
             </header>
-            
-
             </>
             
         )
     };
+
+    export default Navbar;
