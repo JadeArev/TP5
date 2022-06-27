@@ -1,23 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/navbar';
+import Carrousel from './components/carrousel';
+import Marcas from './components/Marcas';
+import Footer from './components/footer';
+import Card from './components/card';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Navbar from './components/navbar';
+
 
 function App() {
-  return (
+  return ( 
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      	<Navbar/>
+        
+        <Carrousel/>
+
+		<div className='container'>
+			<h3 className=" mt-4 mb-4" text-Align="left">Productos destacados</h3>
+		</div>
+		<Row>
+			<Col> <Card/> </Col>
+			<Col> <Card/> </Col>
+			<Col> <Card/> </Col>
+		</Row>
+		<Row>
+			<Col> <Card/> </Col>
+			<Col> <Card/> </Col>
+			<Col> <Card/> </Col>
+		</Row>
+		<Marcas/>
+		<Footer/>
+
+      
+
+
     </div>
   );
 }
