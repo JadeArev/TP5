@@ -1,6 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.css';
-import slider from  '../images/Logo.png';
+import slider from  '../images/slider.png';
 
 function Carrousel(){
     
